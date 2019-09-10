@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+### Installation
 
-You can use the [editor on GitHub](https://github.com/sandulat/carbon-widget-docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Include the widget script at the end of body:
+```html
+<script src="https://carbon.dentist/js/widget.js" type="text/javascript"></script>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+>Note: NPM version coming soon.
 
-### Jekyll Themes
+### Usage
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sandulat/carbon-widget-docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Place the following div wherever you want on your page:
+```html
+<div id="carbon-widget"></div>
+```
+The widget will be rendered inside this div.
 
-### Support or Contact
+Next, use the following script to initialize the widget:
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```html
+<script type="text/javascript">
+  window.onload = function () {
+    CarbonWidget.init({
+      key: 'my-key',
+    });
+  };
+</script>
+```
+
+Here `my-key` is your online appointments url identificator. For example having the url https://carbon.dentist/online-appointments/ng1m43b54jg5 the key would be `ng1m43b54jg5`.
