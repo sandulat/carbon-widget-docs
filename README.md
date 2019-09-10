@@ -28,3 +28,12 @@ Next, use the following script to initialize the widget:
 ```
 
 Here `my-key` is your online appointments url identificator. For example having the url https://carbon.dentist/online-appointments/ng1m43b54jg5 the key would be `ng1m43b54jg5`.
+
+### Options
+
+The options are passed as the first argument to the `init` method. The widget accepts the following options:
+
+| Option     | Required | Description                                   |
+|------------|----------|-----------------------------------------------|
+| key        | yes      | Carbon online appointments url identificator. |
+| background | no       | CSS background color of widget.               |
