@@ -29,6 +29,11 @@ Next, use the following script to initialize the widget:
 
 Here `my-key` is your online appointments url identificator. For example having the url https://carbon.dentist/online-appointments/ng1m43b54jg5 the key would be `ng1m43b54jg5`.
 
+To destroy the widget use:
+```js
+CarbonWidget.destroy()
+```
+
 ### Options
 
 The options are passed as the first argument to the `init` method. The widget accepts the following options:
